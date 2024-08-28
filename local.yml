@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+    - name: import config playbook
+      ansible.builtin.import_playbook: playbook.yml

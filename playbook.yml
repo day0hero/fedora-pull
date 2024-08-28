@@ -1,0 +1,5 @@
+- name: configure ansible-pull
+  hosts: all
+    roles:
+      - role: ansible-pull
+        ansible_pull_url: https://github.com/day0hero/fedora-pull.git

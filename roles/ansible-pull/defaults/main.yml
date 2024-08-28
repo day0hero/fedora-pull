@@ -1,0 +1,6 @@
+---
+# defaults file for ansible-pull
+ansible_pull_timer: |
+  OnBootSec=5m
+  OnCalendar=daily
+  RandomizedDelaySec=30m
