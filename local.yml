@@ -9,5 +9,3 @@
       ansible.builtin.command:
         cmd: ansible-galaxy role install -r requirements.yml
       when: install_requirements is defined
-
-- ansible.builtin.import_playbook: playbook.yml
