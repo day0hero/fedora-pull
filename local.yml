@@ -7,3 +7,7 @@
     - name: bootstrap | install ansible-galaxy roles
       ansible.builtin.command:
         cmd: ansible-galaxy role install -r roles/requirements.yml
+
+  roles:
+    - role: sshConfig
+    - role: ansible-pull
