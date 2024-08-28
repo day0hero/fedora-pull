@@ -1,11 +1,11 @@
 - hosts: localhost
   pre_tasks:
-    - name: bootstrap | install ansible-galaxy collections and roles
+    - name: bootstrap | install ansible-galaxy collections
       ansible.builtin.command:
         cmd: ansible-galaxy collection install -r requirements.yml
       when: install_requirements is defined
 
-    - name: bootstrap | install ansible-galaxy collections and roles
+    - name: bootstrap | install ansible-galaxy roles
       ansible.builtin.command:
         cmd: ansible-galaxy role install -r requirements.yml
       when: install_requirements is defined
