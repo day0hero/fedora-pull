@@ -2,4 +2,5 @@
   hosts: all
   roles:
     - role: ansible-pull
+      become: true
       ansible_pull_url: https://github.com/day0hero/fedora-pull.git
