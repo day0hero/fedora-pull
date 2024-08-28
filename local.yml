@@ -8,6 +8,9 @@
       ansible.builtin.command:
         cmd: ansible-galaxy role install -r roles/requirements.yml
 
-  roles:
-    - role: sshConfig
-    - role: ansible-pull
+
+    - ansible.builtin.include_role:
+        name: "{{ item }}"
+      loop:
+         - sshConfig
+         - ansible-pull
