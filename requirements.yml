@@ -2,3 +2,7 @@ collections:
   - name: amazon.aws
   - name: kubernetes.core
   - name: community.kubernetes
+
+roles:
+  - name: sshConfig
+    src: https://github.com/day0hero/sshConfig.git
