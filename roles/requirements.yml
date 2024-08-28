@@ -1,9 +1,9 @@
 roles:
   - name: sshConfig
-    src: https://github.com/day0hero/sshConfig.git
+    src: https://github.com/day0hero/sshConfig
     version: main
     scm: git
   - name: ansible-pull
-    src: https://github.com/day0hero/ansible-pull.git
+    src: https://github.com/day0hero/ansible-pull
     version: main
     scm: git
