@@ -11,3 +11,7 @@ roles:
     src: https://github.com/day0hero/fedora-software
     version: main
     scm: git
+  - name: fedora-configure
+    src: https://github.com/day0hero/fedora-configure
+    version: main
+    scm: git

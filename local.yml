@@ -21,3 +21,4 @@
         - sshConfig
         - ansible-pull
         - fedora-software
+        - fedora-configure
