@@ -11,8 +11,8 @@
       ansible.builtin.command:
         cmd: ansible-galaxy role install -r roles/requirements.yml -f
 
-
     - ansible.builtin.include_role:
+      become: true
         name: "{{ item }}"
       with_items:
         - sshConfig
