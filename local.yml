@@ -11,8 +11,10 @@
       ansible.builtin.command:
         cmd: ansible-galaxy role install -r roles/requirements.yml -f
 
-    - name: bootstrap | Deploy Roles
-      become: true
+- hosts: localhost
+  become: true
+  tasks:
+    - name: apply configuration | deploy ansible roles
       ansible.builtin.include_role:
         name: "{{ item }}"
       with_items:
