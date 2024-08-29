@@ -12,13 +12,11 @@
         cmd: ansible-galaxy role install -r roles/requirements.yml -f
 
 - hosts: localhost
-  become: true
   tasks:
     - name: apply configuration | deploy ansible roles
       ansible.builtin.include_role:
         name: "{{ item }}"
       with_items:
         - sshConfig
-        - ansible-pull
         - fedora-software
         - fedora-configure
